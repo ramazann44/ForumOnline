@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="Forrumonline.main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Forrum</title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="/style.css" rel="stylesheet" /> 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style>
+
+        body {
+                 background-color: #d5d5d5;
+             }
+
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="tümsayfa" style="width:100%">
+
+            <div class="menu" style="margin-bottom: 20px;height: 75px;">
+
+                <div class="forumlar" style="width: 15%;height: 55px;">
+                    <a href="Forumlar.aspx">Forumlar</a>
+                </div>
+
+                <asp:Panel ID="pnlgirisyap" runat="server">
+
+                    <div class="giris" style="width: 15%;height: 55px;">
+                    <a href="Girisyap.aspx">Giriş Yap</a>
+                </div>  
+
+                </asp:Panel>
+               
+
+                <asp:Panel ID="pnlkaydol" runat="server">
+
+                    <div class="kaydol" style="width: 15%;height: 55px;">
+                    <a href="Kaydol.aspx">Kayıt Ol</a>
+                </div>
+
+                </asp:Panel>
+                
+
+                <asp:Panel ID="pnlforumyaz" runat="server">
+
+                    <div class="forumyaz" style="width: 15%;height: 55px;">
+                    <a href="Forumyaz.aspx">Forum Yaz</a>
+                </div>
+
+                </asp:Panel>
+
+                <asp:Panel ID="pnlyönetici" runat="server">
+
+                    <div class="pnlyönetici" style="width: 15%;height: 55px;">
+                    <a href="Yöneticipaneli.aspx">Yönetici Paneli</a>
+                </div>
+
+                </asp:Panel>
+
+                <asp:Panel ID="pnlhesapbilgileri" runat="server">
+
+                    <div class="pnlhesapbilgileri" style="width: 15%;height: 55px;">
+                    <a href="Hesapbilgileri.aspx">Hesap Bilgilerim</a>
+                </div>
+
+                </asp:Panel>
+
+                <asp:Panel ID="pnlgirisyapanınbilgilerigözükmeyecekolan" runat="server">
+                    
+                    <asp:Label ID="lblrol" runat="server" Text=""></asp:Label>
+
+                </asp:Panel>
+
+                <asp:Panel ID="pnlmesajlas" runat="server" >
+
+                    <div class="pnlhesapbilgileri" style="width: 15%;height: 55px;">
+                        <a href="Mesajlasma.aspx">Mesajlaş</a>
+                    </div>
+
+                </asp:Panel>
+
+                <asp:Panel ID="pnlcikisyap" runat="server" >
+
+                    <div class="pnlhesapbilgileri" style="width: 15%;height: 55px;">
+                        <asp:Button ID="btncikis" runat="server" BackColor="Black" ForeColor="Red" Text="Çıkış Yap" OnClick="btncikis_Click" />
+                </div>
+
+                </asp:Panel>
+
+
+            </div>
+
+
+
+            <div class="icerik">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            </div>
+            
+        </div>
+    </form>
+</body>
+</html>

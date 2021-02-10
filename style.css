@@ -1,0 +1,111 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+    a:hover {
+        color: white;
+    }
+
+.tümsayfa {
+    height: auto;
+    margin: 0 auto;
+    background-color: #fff;
+    color: white;
+}
+
+.menu {
+    width: 100%;
+    float: left;
+    background-color: black;
+    color: white;
+    border-top: 10px solid black;
+}
+
+.forumlar {
+    float: left;
+    border-right: 1px solid black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.kaydol {
+    float: left;
+    text-align: center;
+    border-right: 1px solid black;
+    padding-top: 10px;
+}
+
+.giris {
+    float: left;
+    text-align: center;
+    border-right: 1px solid black;
+    padding-top: 10px;
+}
+
+.forumyaz {
+    float: left;
+    text-align: center;
+    border-right: 1px solid black;
+    padding-top: 10px;
+}
+
+
+.girispanel {
+    width: auto;
+    height: auto;
+    background-color: #fff;
+}
+
+.girisüst {
+    padding: 10px;
+    width: auto;
+    height: 45px;
+    text-align: center;
+}
+
+.girisalt {
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+
+
+.pnlhesapbilgileri {
+    float: left;
+    text-align: center;
+    border-right: 1px solid black;
+    padding-top: 10px;
+}
+
+.pnlyönetici {
+    height: 55px;
+    float: left;
+    text-align: center;
+    border-right: 1px solid black;
+    padding-top: 10px;
+}
+
+.icerik {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: #fff;
+    color: black;
+}
+
+.uyelersekil {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+    .uyelersekil:hover {
+        background-color: #d5d5d5;
+    }
